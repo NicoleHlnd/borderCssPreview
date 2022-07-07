@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="grupo2">
+                <div class="nR">
+                <input type="range" id="slider">
+                </div>
+                </input>
+                <div class="buttons" >
+                    <button name="solid" onclick="changeBorderType(event.target.name)" class="button">  
+                        Solid  
+                    </button>
+                    <button name="dotted"  onclick="changeBorderType(event.target.name)"  class="button">
+                        Dotted
+                    </button>
+                    <button name="dashed"  onclick="changeBorderType(event.target.name)"  class="button">
+                        Dashed
+                    </button>
+                    <button name="double"  onclick="changeBorderType(event.target.name)"  class="button">
+                        Double
+                    </button>
+                    <button name="groove"  onclick="changeBorderType(event.target.name)"  class="button">
+                        Groove
+                    </button>
+                    <button name="ridge"  onclick="changeBorderType(event.target.name)"  class="button">
+                        Ridge
+                    </button>
+                    <button name="inset"  onclick="changeBorderType(event.target.name)"  class="button">
+                        Inset
+                    </button>
+                    <button name="outset" onclick="changeBorderType(event.target.name)"  class="button">
+                        Outset
+                    </button>
+                    <button name="hidden" onclick="changeBorderType(event.target.name)"  class="button">
+                        Hidden
+                    </button>
+                    <button name="none" onclick="changeBorderType(event.target.name)"  class="button">
+                        None
+                    </button>
+                </div>
+                <div class="grupColor">
+                     <input class="color" type="color" id="inputColor" oninput="changeColor(event.target.value)">
+                    </input>
+                    <input type="range" id="slideColor" oninput ="changeOpacity(event.target.value)">
+                  
+                </div>
+            </div>
+            <div class="grupo1">
+                <div class="bord" id=endBord>
+                </div>
+               <div class="cod" id="cssCod">
+                    <p id="cssCod"></p>
+                </div>
+            </div>
+            <div class="grupo2">
+                <div class="buttons2">
+                    <button name="All" class="button" onclick="changeBorderSide(event.target.name)">
+                        All
+                    </button>
+                    <button name="Top" class="button" onclick="changeBorderSide(event.target.name)">
+                        Top
+                    </button>
+                    <button name = "Right" class="button" onclick="changeBorderSide(event.target.name)">
+                        Right
+                    </button>
+                    <button name ="Bottom" class="button" onclick="changeBorderSide(event.target.name)">
+                        Bottom
+                    </button>
+                    <button name="Left" class="button" onclick="changeBorderSide(event.target.name)">
+                        Left
+                    </button>
+                </div>
+                <div class="qbord">
+                    <div class="rangeDiv">
+                        <div class="radiusWithCheckDiv">
+                            <input type="range" class="ranger" id="radiusTopLeft" style="margin-top:0.3vw;">
+                            </input>                                                                    
+                            <input class="rangeNumber" value="10">
+                            </input>
+                            <input type="checkbox" id="all">
+                            </label>
+                            <p>
+                                <span style="color: #D9D9D9;">&nbsp All the same</span> 
+                            </p> 
+                        </div>                       
+                        <input type="range" class="ranger" id="radiusTopRight">
+                        </input>
+                        <input class="rangeNumber" value="10" style="margin-right:0vw">
+                        </input>
+                    </div> 
+                    <div id="radius">                  
+                        <p>
+                            Radius
+                        </p>                       
+                    </div>
+                    <div class="rangeDiv">
+                        <input type="range" class="ranger" id="radiusBottomLeft">
+                        </input>
+                        <input class="rangeNumber" value="10" >
+                        </input>
+                        <input type="range" class="ranger" id="radiusBottomRight">
+                        </input>
+                        <input class="rangeNumber" value="10" style="margin-right:0vw">
+                        </input>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
